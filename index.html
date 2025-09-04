@@ -1,12 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/css/style.css">
+  <meta charset="UTF-8">
+  <title>Todo List</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <script src="/js/script.js"></script>
+  <div class="container">
+    <h1>Todo List</h1>
+    <div class="input-group">
+      <input type="text" id="taskInput" placeholder="Add a todo . . .">
+      <input type="date" id="dateInput">
+      <button class="add-btn" onclick="addTask()">+</button>
+    </div>
+    <div class="buttons">
+      <select id="filterSelect" onchange="filterTasks()">
+        <option value="all">All</option>
+        <option value="pending">Pending</option>
+        <option value="done">Done</option>
+      </select>
+      <button class="delete-btn" onclick="deleteAllTasks()">DELETE ALL</button>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>TASK</th>
+          <th>DUE DATE</th>
+          <th>STATUS</th>
+          <th>ACTIONS</th>
+        </tr>
+      </thead>
+      <tbody id="taskList">
+        <tr><td colspan="4">No task found</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <script src="js/script.js"></script>
 </body>
 </html>

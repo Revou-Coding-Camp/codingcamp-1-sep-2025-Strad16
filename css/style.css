@@ -1,0 +1,110 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #0d1117;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background: #161b22;
+  padding: 20px;
+  border-radius: 10px;
+  width: 600px;
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.5);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #c9d1d9;
+}
+
+.input-group {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.input-group input {
+  padding: 10px;
+  margin-right: 8px;
+  border: none;
+  border-radius: 5px;
+  background: #0d1117;
+  color: #fff;
+}
+
+.input-group input:focus {
+  outline: 2px solid #58a6ff;
+}
+
+.add-btn {
+  background: #3b82f6;
+  border: none;
+  padding: 0 15px;
+  font-size: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+select, .delete-btn {
+  background: #30363d;
+  color: #fff;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.delete-btn {
+  background: #3b82f6;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #0d1117;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+table thead {
+  background: #21262d;
+}
+
+table th, table td {
+  padding: 12px;
+  text-align: center;
+}
+
+table tbody tr:nth-child(even) {
+  background: #161b22;
+}
+
+.action-btn {
+  padding: 5px 10px;
+  margin: 2px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.done-btn {
+  background: #2ea043;
+  color: white;
+}
+
+.del-btn {
+  background: #f85149;
+  color: white;
+}
